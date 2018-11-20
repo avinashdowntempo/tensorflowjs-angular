@@ -11,7 +11,8 @@
     margin: 15px;
 }
 video{
-    max-width: 100%;
+    min-width: 200px;
+    min-height: 100px;
 }
 label, p{
     color: white;
@@ -28,12 +29,10 @@ label, p{
     box-shadow: 0px 0px 7px 0px blue;
 }
 
-
 #webcam-wrapper {
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin: 0 auto;
-
     position: relative;
     display: flex;
     justify-content: center;

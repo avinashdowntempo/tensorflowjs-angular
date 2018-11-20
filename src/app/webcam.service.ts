@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import * as tf from '@tensorflow/tfjs';
-import { Tensor4D } from '@tensorflow/tfjs';
+import { Tensor4D, Tensor3D } from '@tensorflow/tfjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +23,7 @@ export class WebcamService {
     });
   }
 
-  cropImage(img: Tensor4D) {
+  cropImage(img: Tensor3D) {
     const size = Math.min(img.shape[0], img.shape[1]);
     const centerHeight = img.shape[0] / 2;
     const beginHeight = centerHeight - (size / 2);
